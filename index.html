@@ -11,148 +11,143 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 	<style type="text/css">
-		html {
-			background-color: #c2d3d0;
-			font-family: Roboto, Arial, Helvetica, sans-serif;
-			font-size: 12pt;
-			line-height: 130%;
-		}
+	html {
+		background-color: #c2d3d0;
+		font-family: Roboto, Arial, Helvetica, sans-serif;
+		font-size: 12pt;
+		line-height: 130%;
+	}
+	body {
+		font-family: Roboto, Arial, Helvetica, sans-serif;
+		margin: 5px auto;
+		width: 210mm;
+		-webkit-print-color-adjust: exact;
+		background: transparent;
+	}
+	.page {
+		width: 210mm;
+		display: block;
+		overflow: hidden;
+		padding: 10px 7px 10px 7px;
+		background-color: white;
+		page-break-after: always;
+		page-break-before: avoid;
+		page-break-inside: avoid;
+	}
+	hr {
+		border: 1px solid #000000;
+		display: inline-block;
+		margin-top: 1.5vw;
+		width: 100%;
+	}
+	.info-people {
+		padding: 3vw 2vw;
+	}
+	.text-blue {
+		color: #705dd8;
+	}
+	h1 {
+		font-size: 28px;
+		color: #101010;
+		letter-spacing: 0.1em;
+		margin-bottom: 5px;
+		font-weight: bold;
+	}
+	h3 {
+		color: #000000;
+		letter-spacing: 0.15em;
+		font-size: 24px;
+	}
+	h4 {
+		color: #000000;
+		font-weight: bold;
+		font-size: 22px;
+		text-transform: uppercase;
+	}
+	h5 {
+		letter-spacing: 0.1em;
+		padding: 20px 0px;
+		font-size: 18px;
+		font-weight: bold;
+		color: #705dd8;
+	}
+	.p32 {
+		padding: 2vw 2vw 0 2vw;
+	}
+	.p12 {
+		padding: 1vw 2vw 0 2vw;
+	}
+	.p02 {
+		padding: 0 2vw 0 2vw;
+	}
+	.content-summary {
+		font-size: 16px;
+		text-align: justify;
+	}
+	.list-skill {
+		padding: 0;
+		list-style: none;
+		display: inline-block;
+		width: 90%;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.list-skill li {
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		box-shadow: rgba(0, 18, 46, 0.14) 0px 6px 12px 0px;
+		background: #fbfbfb;
+		text-align: center;
+		padding: 5px;
+		font-weight: bold;
+		font-size: 16px;
+		border-radius: 10px;
+		margin-bottom: 15px;
+	}
+	.skill-border {
+		position: absolute;
+		left: 5px;
+		bottom: -5px;
+		box-shadow: rgba(0, 18, 46, 0.14) 0px 6px 12px 0px;
+		height: 2px;
+		background: #d27f18;
+	}
+	.list-favorite {
+		padding: 0;
+		list-style: none;
+		display: inline-flex;
+		margin: 0 auto;
+		width: 100%;
+	}
+	.list-favorite li {
+		width: 100%;
+		box-shadow: rgba(0, 18, 46, 0.14) 0px 6px 12px 0px;
+		margin: 5px 5px;
+		padding: 5px;
+		border-radius: 10px;
+		font-weight: bold;
+	}
+	.list-experients {
+		display: inline-block;
+		width: 100%;
+	}
+	.list-experients li {
+		font-weight: bold;
+	}
+	.project-feature {
+		font-weight: normal;
+	}
+	@media (max-width: 960px) {
 		body {
-			font-family: Roboto, Arial, Helvetica, sans-serif;
-			margin: 5px auto;
-			width: 210mm;
-			-webkit-print-color-adjust: exact;
-			background: transparent;
+			width: 100%;
 		}
 		.page {
-			width: 210mm;
-			display: block;
-			overflow: hidden;
-			padding: 10px 7px 10px 7px;
-			background-color: white;
-			page-break-after: always;
-			page-break-before: avoid;
-			page-break-inside: avoid;
-		}
-		hr {
-			border: 1px solid #000000;
-			display: inline-block;
-			margin-top: 1.5vw;
 			width: 100%;
+			padding: 0 10px;
 		}
-		.info-people {
-			padding: 3vw 2vw;
-		}
-		.text-blue {
-			color: #705dd8;
-		}
-		h1 {
-			font-size: 28px;
-			color: #101010;
-			letter-spacing: 0.1em;
-			margin-bottom: 5px;
-			font-weight: bold;
-		}
-		h3 {
-			color: #000000;
-			letter-spacing: 0.15em;
-			font-size: 24px;
-		}
-		h4 {
-			color: #000000;
-			font-weight: bold;
-			font-size: 22px;
-			text-transform: uppercase;
-		}
-		h5 {
-			letter-spacing: 0.1em;
-			padding: 20px 0px;
-			font-size: 18px;
-			font-weight: bold;
-			color: #705dd8;
-		}
-		h6 {
-			color: #000000;
-			letter-spacing: 0.15em;
-			font-size: 18px;
-		}
-		.p32 {
-			padding: 2vw 2vw 0 2vw;
-		}
-		.p12 {
-			padding: 1vw 2vw 0 2vw;
-		}
-		.p02 {
-			padding: 0 2vw 0 2vw;
-		}
-		.content-summary {
-			font-size: 16px;
-			text-align: justify;
-		}
-		.list-skill {
-			padding: 0;
-			list-style: none;
-			display: inline-block;
-			width: 90%;
-			text-align: center;
-			margin: 0 auto;
-		}
-		.list-skill li {
-			position: relative;
-			display: inline-block;
-			width: 100%;
-			box-shadow: rgba(0, 18, 46, 0.14) 0px 6px 12px 0px;
-			background: #fbfbfb;
-			text-align: center;
-			padding: 5px;
-			font-weight: bold;
-			font-size: 16px;
-			border-radius: 10px;
-			margin-bottom: 15px;
-		}
-		.skill-border {
-			position: absolute;
-			left: 5px;
-			bottom: -5px;
-			box-shadow: rgba(0, 18, 46, 0.14) 0px 6px 12px 0px;
-			height: 2px;
-			background: #d27f18;
-		}
-		.list-favorite {
-			padding: 0;
-			list-style: none;
-			display: inline-flex;
-			margin: 0 auto;
-			width: 100%;
-		}
-		.list-favorite li {
-			width: 100%;
-			box-shadow: rgba(0, 18, 46, 0.14) 0px 6px 12px 0px;
-			margin: 5px 5px;
-			padding: 5px;
-			border-radius: 10px;
-			font-weight: bold;
-		}
-		.list-experients {
-			display: inline-block;
-			width: 100%;
-		}
-		.list-experients li {
-			font-weight: bold;
-		}
-		.project-feature {
-			font-weight: normal;
-		}
-		@media (max-width: 960px) {
-			body {
-				width: 100%;
-			}
-			.page {
-				width: 100%;
-				padding: 0 10px;
-			}
-		}
-	</style>
+	}
+</style>
 </head>
 <body>
 	<div class="container page">
@@ -160,14 +155,12 @@
 			<div class="col-md-12 p32">
 				<h1>PHAM NGUYEN HOAI NAM (MR.)</h1>
 				<h3>DEVELOPER</h3>
-				<h6>Phone: 0338990494</h6>
-				<h6>Email: nampham0494@gmail.com</h6>
 				<hr>
 			</div>
 			<div class="col-md-8 p02">
 				<h5><i class="fas fa-address-card"></i> SUMMARY</h5>
 				<p class="content-summary">
-					A focused and diligent Fullstack developer of four years with working experience in application design, troubleshooting and website development. I can work with a positive attitude, high responsibility, and high pressure. I always try to be a full-stack developer which can work in many positions.
+					A focused and diligent developer of four years with working experience in application design, troubleshooting and website development. I can work with a positive attitude, high responsibility, and high pressure. I always try to be a full-stack developer which can work in many positions.
 				</p>
 				<hr>
 				<h5><i class="fas fa-school"></i> EDUCATIONS</h5>
@@ -181,38 +174,161 @@
 			<div class="col-md-4 text-center">
 				<h5><i class="fas fa-wrench"></i> SKILLS</h5>
 				<ul class="list-skill">
-					<li class="text-blue" style="height: 60px;display: inline-flex;justify-content: center;align-items: center;">
+					<li class="text-blue">
 						MySQL - MongoDB - PostgreSQL
 					</li>
-					<li class="text-blue" style="height: 60px;display: inline-flex;justify-content: center;align-items: center;">
+					<li class="text-blue">
 						NODEJS - JAVA - PHP
 					</li>
-					<li class="text-blue" style="height: 60px;display: inline-flex;justify-content: center;align-items: center;">
+					<li class="text-blue">
 						ANGULAR - VUEJS - REACTJS
+					</li>
+				</ul>
+				<h5><i class="fas fa-heart"></i> HOBBIES</h5>
+				<ul class="list-favorite">
+					<li class="text-blue text-center">
+						<i class="fas fa-plane-departure"></i><br>Travel
+					</li>
+					<li class="text-blue text-center">
+						<i class="fas fa-mug-hot"></i><br>Relax
+					</li>
+					<li class="text-blue text-center">
+						<i class="fas fa-code"></i><br>Code
 					</li>
 				</ul>
 			</div>
 			<div class="col-md-12 p02">
 				<h5 class="pt-0"><i class="fas fa-history"></i> EXPERIENCE</h5>
-				<h4 style="font-size: 18px;"><i class="fas fa-building"></i>&nbsp;&nbsp;&nbsp;&nbsp;WISE Solutions & Services &nbsp;|&nbsp; HCM City<br> Jan 2017 - Jan 2021</h4>
-				- Work with the team to analyze customer requirements, technical analysis, find solutions to create products<br>
-				- Building e-commerce website Bookmedi (<a href="https://bookmedi.vn">bookmedi.vn</a>, <a href="https://namcyeon.github.io/bookmedi.html">Admin</a>). Manage more than 12,000 products. Delivery integration with Proship. Payment integration with Momo, VNPAY<br>
-				- Building CRM for TheGolfHub. Customers book from the website. Choose the hole, play time, optional services and lock the time after Booking.<br>
-				- Thegolfhub education system, with a list of teachers. After registration, students will be divided into classes with teachers. The teacher will evaluate the students after each practice session and email the assessment sheet<br>
-				- Building business management software to manage 6 printing companies. Print quotes, print contracts, design. Revenue statistics<br>
-				- Build Backend for Villship delivery app. Restaurant management, food, delivery staff. <br>
-				Find the nearest shiper and send a single request to the shiper, the rejected shiper will find the next shiper. Up to 5 minutes will put into the system to wait for staff to assign. <br>
-				Commissions per restaurant, commissions shiper. Payment integration with Momo, ZaloPay. Push notification with Firebase. Deploy with Docker<br><br><br>
-				<h4 style="font-size: 18px;"><i class="fas fa-building"></i>&nbsp;&nbsp;&nbsp;&nbsp;VIETSAVER &nbsp;|&nbsp; Jan 2021 - Present</h4>
-				- Building an online installment loan system Vietsaver for TGDD. <br>
-				- Open VIB Card online with VIB<br>
-				- Build CRM Vietsaver (crm.vietsaver.com). API NestJS, Frontend Angular<br>
-				- Integration with MWG, VIB, VIETGUYS(SMS), AWS S3, Kalapa(OCR), EPAY(VNPT)<br>
-				- Build Microservice system with JAVA(Quarkus), GRPC, Nats queue<br>
-				- Authentication with JWT, auth service, user service, otp service, email service, sms service. <br>
-				- Nats queue (Send email, send Order to Partner, background task, logging)<br>
-				- Building insurance products for TGDD, GRAB. Receive order, send to queue and handle asynchronous order creation (Check voucher, check product, order number can't match). <br>
-				After creating the order, send information to the partner to create a certificate.<br>
+				<h4 style="font-size: 18px;"><i class="fas fa-building"></i>&nbsp;&nbsp;&nbsp;&nbsp;VIETSAVER &nbsp;|&nbsp; Feb 2021 - Present</h4>
+				<ul class="list-experients">
+					<li>
+						Maintaince Backend and build Website Vietsaver (vietsaver.com)
+						Build CRM Vietsaver (crm.vietsaver.com)
+						<p class="project-feature"> 
+							Language: JAVA, NODEJS, ANGULAR<br>
+							Feature:<br>
+							- CRM, Order management<br>
+							- Connect with MWG<br>
+							- Building an online installment loan system Vietsaver for TGDD. <br>
+							- Open VIB Card online with VIB<br>
+							- Build CRM Vietsaver (crm.vietsaver.com). API NestJS, Frontend Angular<br>
+							- Integration with MWG, VIB, VIETGUYS(SMS), AWS S3, Kalapa(OCR), EPAY(VNPT)<br>
+							- Build Microservice system with JAVA(Quarkus), GRPC, Nats queue<br>
+							- Nats queue (Send email, send Order to Partner, background task, logging)<br>
+							- Building insurance products for TGDD, GRAB.<br>
+						</p>
+					</li>
+				</ul>
+				<h4 style="font-size: 18px;"><i class="fas fa-building"></i>&nbsp;&nbsp;&nbsp;&nbsp;WISE Solutions & Services &nbsp;|&nbsp; HCM City<br> Jan 2017 - Feb 2021</h4>
+				<ul class="list-experients">
+					<li>
+						Analyze, design and build e-commerce website Bookmedi (<a href="https://bookmedi.vn">bookmedi.vn</a>, <a href="https://namcyeon.github.io/bookmedi.html">Admin</a>)
+						<p class="project-feature"> Feature:<br>
+							- <b>Teck stack: PHP and MySQL</b><br>
+							- E-commerce feature: Products management, orders management, reports management...<br>
+							- Multivendor<br>
+							- Intergrate Momo<br>
+							- Intergrate VNPAY<br>
+							- Intergrate ProShip<br>
+						</p>
+					</li>
+					<li>
+						Build website Ritavo Pro (<a href="https://pro.ritavo.com">pro.ritavo.com</a>)
+						<p class="project-feature"> Feature:<br>
+							- <b>Teck stack: PHP and MySQL</b><br>
+							- Products management, website information,...<br>
+							- Manufacturer Kallista, Kohler, ...
+						</p>
+					</li>
+					<li>
+						Build website TheGolfHub and Application for manager Golf Education (<a href="https://thegolfhub.com.vn">thegolfhub.com.vn</a>, <a href="https://namcyeon.github.io/mgmt.html">mgmt.thegolfhub.com.vn</a>)
+						<p class="project-feature">
+							Feature: Website TheGolfHub<br>
+							- <b>Teck stack: PHP and MySQL</b><br>
+							- Products management, website information,...<br>
+							- Service management and booking service<br>
+							- Customers management<br>
+							Feature: Application for manager Golf Education<br>
+							- Golf Training Programs, Golf Class, Golf 3D Simulator, Practice<br>
+							- Golf Fitness, Fitting, Rental, Event<br>
+							- Golf Booking, Calendar<br>
+							- Customer and Lead manager<br>
+							- Orders and Invoices<br>
+							- Reports
+						</p>
+					</li>
+					<!-- <li>
+						Build website Butmaynethoa (Hong Ha Corp) (<a href="https://butmaynethoa.com.vn">butmaynethoa.com.vn</a>)
+						<p class="project-feature"> Feature:<br>
+							- <b>Teck stack: PHP and MySQL</b><br>
+							- Products management, website information,...<br>
+							- Challenge management<br>
+							- Student charts<br>
+						</p>
+					</li> -->
+					<li>
+						Build CRM EVERYGOLF (<a href="https://namcyeon.github.io/crm.html">crm.wsas.vn</a>)
+						<p class="project-feature"> Feature:<br>
+							- <b>Teck stack: Codeigniter</b><br>
+							- Leads management, customer management with Kanban, Sales management, Invoices management, Payments management<br>
+							- Contracts management, Quotes management<br>
+							- Projects management and tasks management<br>
+							- Support and ticket management<br>
+							- Email template<br>
+							- Auto assign task for sale every day, auto send alert email for task<br>
+							- Reports
+						</p>
+					</li>
+					<li>
+						Build application business manager IAV - IN AN VIET (<a href="https://namcyeon.github.io/iav.html">iav.company</a>)
+						<p class="project-feature"> Feature:<br>
+							- <b>Teck stack: Codeigniter</b><br>
+							- Multi company (6 company in system)<br>
+							- Employee management, salary management<br>
+							- Customers management<br>
+							- Quotes management, print PDF quote, every company will have different quote template<br>
+							- Contracts management, orders management. Print WORD contract from system with quote info<br>
+							- Loyal customers management<br>
+							- Quote fail and recreate for other company<br>
+							- Materials management<br>
+							- Accountant<br>
+							- Reports
+						</p>
+					</li>
+					<!-- <li>
+						Build Application Keycheck and Backend (<a href="https://namcyeon.github.io/keycheck.html">keycheck.vn</a>)
+						<p class="project-feature"> Feature:<br>
+							- <b>Teck stack: PHP and MySQL</b><br>
+							- Projects management<br>
+							- Company management<br>
+							- Customer in company with permission of column data<br>
+							- Brand management<br>
+							- API for App Keycheck<br>
+						</p>
+					</li> -->
+					<li>
+						Build Backend and Admin for App XEBIN (<a href="https://namcyeon.github.io/xebin.html">cms.xebin.com</a>)
+						<p class="project-feature"> Feature:<br>
+							- <b>Teck stack: Codeigniter and NodeJS</b><br>
+							- Ads management<br>
+							- Car manufacturer<br>
+							- Attribute: Attribute group, attribute, color, year,...<br>
+							- Location with type: Car park, Gara,...<br>
+							- Notification management
+						</p>
+					</li>
+					<li>
+						Maintaince Backend and build API for App VILLSHIP (<a href="https://namcyeon.github.io/villship.html">villship.com</a>)
+						<p class="project-feature"> Feature:<br>
+							- <b>Teck stack: Laravel and NodeJS</b><br>
+							- Restaurant management<br>
+							- Food management<br>
+							- Customer, driver management<br>
+							- Order management<br>
+							- Intergrate ZaloPay
+						</p>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>
